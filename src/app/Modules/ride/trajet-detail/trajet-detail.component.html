@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+  <div class="row">
+  <div class="col-3">
+    <app-filtre></app-filtre> <!-- Composant Filtre ajouté -->
+  </div>
+  <div class="col-9">
+  <h2>Détails du Covoiturage</h2>
+
+  <!-- Itération sur le tableau de covoiturages -->
+  <div *ngFor="let covoiturage of covoiturages" class="trip-card">
+    <div class="trip-info">
+      <div class="trip-header">
+        <p>{{ covoiturage.heureDepart }} - {{ covoiturage.dateDepart }}</p>
+      </div>
+
+      <div class="trip-details">
+        <div class="location">
+          <p>{{ covoiturage.pointDepart }}</p>
+          <span>&#10142;</span> <!-- Flèche -->
+          <p>{{ covoiturage.pointArrivee }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="trip-footer">
+      <div class="driver-info">
+        <p>Places disponibles : {{ covoiturage.placesDisponibles }}</p>
+      </div>
+
+      <div class="trip-price">
+        <p>{{ covoiturage.prix | currency:'EUR':'symbol':'1.2-2' }}</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Lien vers le formulaire d'ajout de trajet -->
+  <div class="mt-3">
+    <a routerLink="/ride/trajet" class="btn btn-primary">Ajouter un trajet</a>
+  </div>
+</div>
+
+<app-footer></app-footer>

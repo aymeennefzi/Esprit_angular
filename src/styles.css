@@ -1,0 +1,12 @@
+html, body {
+  height: 100%; /* Full height */
+}
+
+.content {
+  min-height: calc(100vh - 100px); /* Adjust based on the height of the navbar and footer */
+}
+
+.footer {
+  margin-top: auto; /* Push the footer to the bottom */
+}
+/* You can add global styles to this file, and also import other style files */

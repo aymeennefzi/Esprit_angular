@@ -1,0 +1,62 @@
+.filtre-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tri-section h3,
+.filtre-section h4 {
+  margin-bottom: 10px;
+}
+
+.clear-filters {
+  color: #8d2e2e;
+  font-size: 0.9rem;
+  float: right;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-item, .checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-item input,
+.checkbox-item input {
+  margin-right: 10px;
+}
+
+.radio-item label,
+.checkbox-item label {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.radio-item i,
+.checkbox-item i {
+  margin-left: 10px;
+  color: #777;
+}
+
+.filter-count {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  margin-left: auto;
+  color: #888;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}

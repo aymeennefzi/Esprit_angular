@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-3 {
+  padding-right: 15px;
+}
+
+.col-9 {
+  padding-left: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}

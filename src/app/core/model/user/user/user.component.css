@@ -1,0 +1,40 @@
+/* Style global pour le card */
+.card {
+  border-radius: 20px;
+}
+
+/* Assurez-vous que le card est bien centré verticalement et horizontalement */
+.container {
+  min-height: 100vh; /* Remplace la hauteur fixe pour plus de flexibilité */
+  padding: 10px 15px; /* Ajoute un peu d'espacement latéral */
+}
+
+/* Ajuster les styles du card pour les écrans plus petits */
+@media (max-width: 767px) {
+  .card {
+    width: 100%; /* Utiliser toute la largeur disponible sur les petits écrans */
+  }
+
+  .form-control-sm {
+    font-size: 0.875rem; /* Réduit la taille de la police pour les champs */
+  }
+
+  .form-label {
+    font-size: 0.75rem; /* Réduit la taille de la police pour les labels */
+  }
+
+  .btn-sm {
+    font-size: 0.75rem; /* Réduit la taille du bouton */
+  }
+}
+
+/* Ajuster les styles pour les écrans moyens et grands */
+@media (min-width: 768px) {
+  .card {
+    width: 90%; /* Réduit la largeur du card pour les écrans moyens */
+  }
+
+  .form-outline {
+    margin-bottom: 1rem; /* Ajoute un espacement plus généreux entre les champs */
+  }
+}
